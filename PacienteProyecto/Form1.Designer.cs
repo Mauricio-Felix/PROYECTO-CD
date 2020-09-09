@@ -52,87 +52,105 @@
             // lblRegistro
             // 
             this.lblRegistro.AutoSize = true;
-            this.lblRegistro.Location = new System.Drawing.Point(334, 24);
+            this.lblRegistro.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblRegistro.Location = new System.Drawing.Point(314, 33);
             this.lblRegistro.Name = "lblRegistro";
-            this.lblRegistro.Size = new System.Drawing.Size(114, 13);
+            this.lblRegistro.Size = new System.Drawing.Size(206, 16);
             this.lblRegistro.TabIndex = 0;
             this.lblRegistro.Text = "Registro de Pacientes ";
             // 
             // lblNombres
             // 
             this.lblNombres.AutoSize = true;
-            this.lblNombres.Location = new System.Drawing.Point(221, 57);
+            this.lblNombres.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombres.ForeColor = System.Drawing.Color.Teal;
+            this.lblNombres.Location = new System.Drawing.Point(282, 71);
             this.lblNombres.Name = "lblNombres";
-            this.lblNombres.Size = new System.Drawing.Size(52, 13);
+            this.lblNombres.Size = new System.Drawing.Size(68, 20);
             this.lblNombres.TabIndex = 1;
             this.lblNombres.Text = "Nombres:";
             // 
             // lblApellidos
             // 
             this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Location = new System.Drawing.Point(221, 87);
+            this.lblApellidos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellidos.ForeColor = System.Drawing.Color.Teal;
+            this.lblApellidos.Location = new System.Drawing.Point(282, 101);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(52, 13);
+            this.lblApellidos.Size = new System.Drawing.Size(70, 20);
             this.lblApellidos.TabIndex = 2;
             this.lblApellidos.Text = "Apellidos:";
             // 
             // lblCedula
             // 
             this.lblCedula.AutoSize = true;
-            this.lblCedula.Location = new System.Drawing.Point(221, 113);
+            this.lblCedula.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCedula.ForeColor = System.Drawing.Color.Teal;
+            this.lblCedula.Location = new System.Drawing.Point(282, 127);
             this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(43, 13);
+            this.lblCedula.Size = new System.Drawing.Size(55, 20);
             this.lblCedula.TabIndex = 3;
             this.lblCedula.Text = "Cédula:";
             // 
             // lblEdad
             // 
             this.lblEdad.AutoSize = true;
-            this.lblEdad.Location = new System.Drawing.Point(221, 138);
+            this.lblEdad.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdad.ForeColor = System.Drawing.Color.Teal;
+            this.lblEdad.Location = new System.Drawing.Point(282, 152);
             this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(35, 13);
+            this.lblEdad.Size = new System.Drawing.Size(45, 20);
             this.lblEdad.TabIndex = 4;
             this.lblEdad.Text = "Edad:";
             // 
             // lblSala
             // 
             this.lblSala.AutoSize = true;
-            this.lblSala.Location = new System.Drawing.Point(178, 247);
+            this.lblSala.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSala.ForeColor = System.Drawing.Color.Teal;
+            this.lblSala.Location = new System.Drawing.Point(239, 261);
             this.lblSala.Name = "lblSala";
-            this.lblSala.Size = new System.Drawing.Size(86, 13);
+            this.lblSala.Size = new System.Drawing.Size(110, 20);
             this.lblSala.TabIndex = 8;
             this.lblSala.Text = "Número de Sala:";
             // 
             // lblNumHistoria
             // 
             this.lblNumHistoria.AutoSize = true;
-            this.lblNumHistoria.Location = new System.Drawing.Point(130, 224);
+            this.lblNumHistoria.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumHistoria.ForeColor = System.Drawing.Color.Teal;
+            this.lblNumHistoria.Location = new System.Drawing.Point(191, 238);
             this.lblNumHistoria.Name = "lblNumHistoria";
-            this.lblNumHistoria.Size = new System.Drawing.Size(136, 13);
+            this.lblNumHistoria.Size = new System.Drawing.Size(171, 20);
             this.lblNumHistoria.TabIndex = 7;
             this.lblNumHistoria.Text = "Número de Historia Clínica:";
             // 
             // lblFechaNacimiento
             // 
             this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(155, 194);
+            this.lblFechaNacimiento.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaNacimiento.ForeColor = System.Drawing.Color.Teal;
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(216, 208);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(111, 13);
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(140, 20);
             this.lblFechaNacimiento.TabIndex = 6;
             this.lblFechaNacimiento.Text = "Fecha de Nacimiento:";
             // 
             // lblGenero
             // 
             this.lblGenero.AutoSize = true;
-            this.lblGenero.Location = new System.Drawing.Point(221, 166);
+            this.lblGenero.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenero.ForeColor = System.Drawing.Color.Teal;
+            this.lblGenero.Location = new System.Drawing.Point(282, 180);
             this.lblGenero.Name = "lblGenero";
-            this.lblGenero.Size = new System.Drawing.Size(45, 13);
+            this.lblGenero.Size = new System.Drawing.Size(58, 20);
             this.lblGenero.TabIndex = 5;
             this.lblGenero.Text = "Género:";
             // 
             // mtxtNombres
             // 
-            this.mtxtNombres.Location = new System.Drawing.Point(279, 57);
+            this.mtxtNombres.Location = new System.Drawing.Point(367, 71);
             this.mtxtNombres.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.mtxtNombres.Name = "mtxtNombres";
             this.mtxtNombres.Size = new System.Drawing.Size(153, 20);
@@ -140,7 +158,7 @@
             // 
             // mtxtApellidos
             // 
-            this.mtxtApellidos.Location = new System.Drawing.Point(279, 84);
+            this.mtxtApellidos.Location = new System.Drawing.Point(367, 98);
             this.mtxtApellidos.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
             this.mtxtApellidos.Name = "mtxtApellidos";
             this.mtxtApellidos.Size = new System.Drawing.Size(153, 20);
@@ -148,14 +166,14 @@
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(279, 110);
+            this.txtCedula.Location = new System.Drawing.Point(367, 124);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(100, 20);
+            this.txtCedula.Size = new System.Drawing.Size(121, 20);
             this.txtCedula.TabIndex = 11;
             // 
             // mtxtEdad
             // 
-            this.mtxtEdad.Location = new System.Drawing.Point(279, 138);
+            this.mtxtEdad.Location = new System.Drawing.Point(367, 152);
             this.mtxtEdad.Mask = "99";
             this.mtxtEdad.Name = "mtxtEdad";
             this.mtxtEdad.Size = new System.Drawing.Size(100, 20);
@@ -168,21 +186,21 @@
             this.cmbGenero.Items.AddRange(new object[] {
             "Femenino",
             "Masculino"});
-            this.cmbGenero.Location = new System.Drawing.Point(279, 166);
+            this.cmbGenero.Location = new System.Drawing.Point(367, 180);
             this.cmbGenero.Name = "cmbGenero";
             this.cmbGenero.Size = new System.Drawing.Size(121, 21);
             this.cmbGenero.TabIndex = 13;
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(279, 194);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(367, 208);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaNacimiento.TabIndex = 14;
             // 
             // mtxtNumHistoria
             // 
-            this.mtxtNumHistoria.Location = new System.Drawing.Point(279, 221);
+            this.mtxtNumHistoria.Location = new System.Drawing.Point(368, 238);
             this.mtxtNumHistoria.Mask = "9999";
             this.mtxtNumHistoria.Name = "mtxtNumHistoria";
             this.mtxtNumHistoria.Size = new System.Drawing.Size(100, 20);
@@ -191,7 +209,7 @@
             // 
             // mtxtSala
             // 
-            this.mtxtSala.Location = new System.Drawing.Point(279, 247);
+            this.mtxtSala.Location = new System.Drawing.Point(367, 261);
             this.mtxtSala.Mask = "999";
             this.mtxtSala.Name = "mtxtSala";
             this.mtxtSala.Size = new System.Drawing.Size(100, 20);
@@ -200,7 +218,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(279, 294);
+            this.btnGuardar.Location = new System.Drawing.Point(367, 308);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 17;
@@ -209,7 +227,7 @@
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(426, 294);
+            this.btnMostrar.Location = new System.Drawing.Point(514, 308);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(75, 23);
             this.btnMostrar.TabIndex = 18;
@@ -220,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 370);
+            this.ClientSize = new System.Drawing.Size(865, 449);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.mtxtSala);
