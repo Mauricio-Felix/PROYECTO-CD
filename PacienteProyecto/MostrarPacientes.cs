@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace PacienteProyecto
 {
-    public partial class frmRegistro : Form
+    public partial class MostrarPacientes : Form
     {
-        public frmRegistro()
+        public MostrarPacientes()
         {
             InitializeComponent();
         }
 
-       
+        
+        
     }
 }
