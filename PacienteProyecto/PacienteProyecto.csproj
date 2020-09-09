@@ -59,6 +59,7 @@
     <Compile Include="MostrarPacientes.Designer.cs">
       <DependentUpon>MostrarPacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Paciente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
