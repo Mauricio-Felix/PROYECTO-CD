@@ -61,7 +61,8 @@
             this.cmbBusqueda.Items.AddRange(new object[] {
             "Todos",
             "Número de Historia Clínica",
-            "Número de Sala"});
+            "Número de Sala",
+            "Pacientes Tercera Edad"});
             this.cmbBusqueda.Location = new System.Drawing.Point(522, 32);
             this.cmbBusqueda.Name = "cmbBusqueda";
             this.cmbBusqueda.Size = new System.Drawing.Size(121, 21);
