@@ -17,7 +17,6 @@ namespace PacienteProyecto
             InitializeComponent();
         }
 
-        
-        
+       
     }
 }
