@@ -75,5 +75,7 @@ namespace PacienteProyecto
             mostrarPacientes.Show();
             mostrarPacientes.pacientes = personas;
         }
+
+        
     }
 }
