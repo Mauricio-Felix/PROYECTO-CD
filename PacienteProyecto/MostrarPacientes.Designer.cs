@@ -67,6 +67,7 @@
             this.cmbBusqueda.Name = "cmbBusqueda";
             this.cmbBusqueda.Size = new System.Drawing.Size(121, 21);
             this.cmbBusqueda.TabIndex = 1;
+            this.cmbBusqueda.SelectedIndexChanged += new System.EventHandler(this.cmbBusqueda_SelectedIndexChanged);
             // 
             // dgvMostrarDatos
             // 
@@ -182,6 +183,7 @@
             this.Controls.Add(this.lblBusqueda);
             this.Name = "MostrarPacientes";
             this.Text = "MostrarPacientes";
+            this.Load += new System.EventHandler(this.MostrarPacientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarDatos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

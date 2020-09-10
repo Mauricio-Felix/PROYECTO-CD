@@ -12,11 +12,25 @@ namespace PacienteProyecto
 {
     public partial class MostrarPacientes : Form
     {
+        public Pacientes pacientes { set; get; }
         public MostrarPacientes()
         {
             InitializeComponent();
+            pacientes = new Pacientes();
         }
 
-       
+        private void MostrarPacientes_Load(object sender, EventArgs e)
+        {
+            OcultarControles();
+        }
+
+        private void cmbBusqueda_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OcultarControles();
+            if (cmbBusqueda.SelectedItem.Equals("Todos"))
+            {
+
+            }
+        }
     }
 }
