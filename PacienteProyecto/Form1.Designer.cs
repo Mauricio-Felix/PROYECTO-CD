@@ -233,7 +233,6 @@
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrar.Location = new System.Drawing.Point(497, 395);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(75, 23);
@@ -245,11 +244,11 @@
             // lblUnach
             // 
             this.lblUnach.AutoSize = true;
-            this.lblUnach.Font = new System.Drawing.Font("Vineta BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnach.ForeColor = System.Drawing.Color.Purple;
             this.lblUnach.Location = new System.Drawing.Point(215, 41);
             this.lblUnach.Name = "lblUnach";
-            this.lblUnach.Size = new System.Drawing.Size(478, 22);
+            this.lblUnach.Size = new System.Drawing.Size(268, 20);
             this.lblUnach.TabIndex = 19;
             this.lblUnach.Text = "Universidad Nacional de Chimborazo";
             // 

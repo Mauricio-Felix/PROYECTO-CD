@@ -31,7 +31,6 @@
             this.lblBusqueda = new System.Windows.Forms.Label();
             this.cmbBusqueda = new System.Windows.Forms.ComboBox();
             this.dgvMostrarDatos = new System.Windows.Forms.DataGridView();
-            this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblNumClinica = new System.Windows.Forms.Label();
             this.lblSala = new System.Windows.Forms.Label();
@@ -80,16 +79,6 @@
             this.dgvMostrarDatos.Size = new System.Drawing.Size(552, 257);
             this.dgvMostrarDatos.TabIndex = 2;
             // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(551, 58);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 3;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,7 +114,7 @@
             // mtxtClinica
             // 
             this.mtxtClinica.Location = new System.Drawing.Point(232, 19);
-            this.mtxtClinica.Mask = "9999";
+            this.mtxtClinica.Mask = "99999";
             this.mtxtClinica.Name = "mtxtClinica";
             this.mtxtClinica.Size = new System.Drawing.Size(100, 20);
             this.mtxtClinica.TabIndex = 7;
@@ -149,6 +138,7 @@
             this.btnMostrarHistoria.TabIndex = 9;
             this.btnMostrarHistoria.Text = "Mostrar";
             this.btnMostrarHistoria.UseVisualStyleBackColor = true;
+            this.btnMostrarHistoria.Click += new System.EventHandler(this.btnMostrarHistoria_Click);
             // 
             // btnMostrarSala
             // 
@@ -189,7 +179,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.dgvMostrarDatos);
             this.Controls.Add(this.cmbBusqueda);
             this.Controls.Add(this.lblBusqueda);
@@ -211,7 +200,6 @@
         private System.Windows.Forms.Label lblBusqueda;
         private System.Windows.Forms.ComboBox cmbBusqueda;
         private System.Windows.Forms.DataGridView dgvMostrarDatos;
-        private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblNumClinica;
         private System.Windows.Forms.Label lblSala;

@@ -21,16 +21,39 @@ namespace PacienteProyecto
 
         private void MostrarPacientes_Load(object sender, EventArgs e)
         {
-            OcultarControles();
+            OcultarControles1();
         }
 
         private void cmbBusqueda_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OcultarControles();
+            OcultarControles1();
             if (cmbBusqueda.SelectedItem.Equals("Todos"))
             {
-
+                dgvMostrarDatos.DataSource = pacientes.pacientes;
             }
+            OcultarControles1();
+            if (cmbBusqueda.SelectedItem.Equals("Número de Historia Clínica"))
+            {
+                lblNumClinica.Visible = true;
+                mtxtClinica.Visible = true;
+                btnMostrarHistoria.Visible = true;
+            }
+            if (cmbBusqueda.SelectedItem.Equals("Pacientes Tercera Edad"))
+            {
+                dgvMostrarDatos.DataSource = pacientes.TerceraEdad();
+            }
+        }
+        public void OcultarControles1()
+        {
+            lblNumClinica.Visible = false;
+            mtxtClinica.Visible = false;
+            btnMostrarHistoria.Visible = false;
+        }
+
+        private void btnMostrarHistoria_Click(object sender, EventArgs e)
+        {
+            dgvMostrarDatos.DataSource = pacientes.BuscarHistoria(Convert.ToInt32(mtxtClinica.Text));
+            mtxtClinica.Text = "";
         }
     }
 }
