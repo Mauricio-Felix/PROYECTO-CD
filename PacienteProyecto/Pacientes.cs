@@ -42,5 +42,18 @@ namespace PacienteProyecto
             }
             return persona;
         }
+       
+        public List<Paciente> PacienteIniciaCadena(string cadena)
+        {
+            List<Paciente> persona = new List<Paciente>();
+            foreach (Paciente paciente in pacientes)
+            {
+                if (paciente.Nombre.StartsWith(cadena))
+                {
+                    persona.Add(paciente);
+                }
+            }
+            return persona;
+        }
     }
 }

@@ -40,9 +40,14 @@
             this.btnMostrarSala = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnMostrarPaciente = new System.Windows.Forms.Button();
+            this.lblNomPaciente = new System.Windows.Forms.Label();
+            this.mtxtNomPaciente = new System.Windows.Forms.MaskedTextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarDatos)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblBusqueda
@@ -50,7 +55,7 @@
             this.lblBusqueda.AutoSize = true;
             this.lblBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBusqueda.ForeColor = System.Drawing.Color.Navy;
-            this.lblBusqueda.Location = new System.Drawing.Point(467, 15);
+            this.lblBusqueda.Location = new System.Drawing.Point(483, 67);
             this.lblBusqueda.Name = "lblBusqueda";
             this.lblBusqueda.Size = new System.Drawing.Size(64, 15);
             this.lblBusqueda.TabIndex = 0;
@@ -65,7 +70,7 @@
             "Número de Historia Clínica",
             "Número de Sala",
             "Pacientes Tercera Edad"});
-            this.cmbBusqueda.Location = new System.Drawing.Point(526, 12);
+            this.cmbBusqueda.Location = new System.Drawing.Point(542, 64);
             this.cmbBusqueda.Name = "cmbBusqueda";
             this.cmbBusqueda.Size = new System.Drawing.Size(121, 21);
             this.cmbBusqueda.TabIndex = 1;
@@ -74,7 +79,7 @@
             // dgvMostrarDatos
             // 
             this.dgvMostrarDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMostrarDatos.Location = new System.Drawing.Point(354, 96);
+            this.dgvMostrarDatos.Location = new System.Drawing.Point(374, 142);
             this.dgvMostrarDatos.Name = "dgvMostrarDatos";
             this.dgvMostrarDatos.Size = new System.Drawing.Size(552, 257);
             this.dgvMostrarDatos.TabIndex = 2;
@@ -82,7 +87,7 @@
             // btnCerrar
             // 
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Location = new System.Drawing.Point(851, 7);
+            this.btnCerrar.Location = new System.Drawing.Point(979, 62);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(75, 23);
             this.btnCerrar.TabIndex = 4;
@@ -96,9 +101,9 @@
             this.lblNumClinica.ForeColor = System.Drawing.Color.Indigo;
             this.lblNumClinica.Location = new System.Drawing.Point(6, 22);
             this.lblNumClinica.Name = "lblNumClinica";
-            this.lblNumClinica.Size = new System.Drawing.Size(227, 17);
+            this.lblNumClinica.Size = new System.Drawing.Size(182, 17);
             this.lblNumClinica.TabIndex = 5;
-            this.lblNumClinica.Text = "Ingrese Número de Historia Clínica:";
+            this.lblNumClinica.Text = " Número de Historia Clínica:";
             // 
             // lblSala
             // 
@@ -107,22 +112,22 @@
             this.lblSala.ForeColor = System.Drawing.Color.Indigo;
             this.lblSala.Location = new System.Drawing.Point(6, 31);
             this.lblSala.Name = "lblSala";
-            this.lblSala.Size = new System.Drawing.Size(158, 17);
+            this.lblSala.Size = new System.Drawing.Size(109, 17);
             this.lblSala.TabIndex = 6;
-            this.lblSala.Text = "Ingrese Número de Sala:";
+            this.lblSala.Text = "Número de Sala:";
             // 
             // mtxtClinica
             // 
-            this.mtxtClinica.Location = new System.Drawing.Point(232, 19);
-            this.mtxtClinica.Mask = "99999";
+            this.mtxtClinica.Location = new System.Drawing.Point(186, 22);
+            this.mtxtClinica.Mask = "9999";
             this.mtxtClinica.Name = "mtxtClinica";
-            this.mtxtClinica.Size = new System.Drawing.Size(100, 20);
+            this.mtxtClinica.Size = new System.Drawing.Size(92, 20);
             this.mtxtClinica.TabIndex = 7;
             this.mtxtClinica.ValidatingType = typeof(int);
             // 
             // mtxtSala
             // 
-            this.mtxtSala.Location = new System.Drawing.Point(163, 28);
+            this.mtxtSala.Location = new System.Drawing.Point(121, 30);
             this.mtxtSala.Mask = "99";
             this.mtxtSala.Name = "mtxtSala";
             this.mtxtSala.Size = new System.Drawing.Size(100, 20);
@@ -138,12 +143,11 @@
             this.btnMostrarHistoria.TabIndex = 9;
             this.btnMostrarHistoria.Text = "Mostrar";
             this.btnMostrarHistoria.UseVisualStyleBackColor = true;
-            this.btnMostrarHistoria.Click += new System.EventHandler(this.btnMostrarHistoria_Click);
             // 
             // btnMostrarSala
             // 
             this.btnMostrarSala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarSala.Location = new System.Drawing.Point(154, 71);
+            this.btnMostrarSala.Location = new System.Drawing.Point(121, 74);
             this.btnMostrarSala.Name = "btnMostrarSala";
             this.btnMostrarSala.Size = new System.Drawing.Size(75, 23);
             this.btnMostrarSala.TabIndex = 10;
@@ -157,7 +161,7 @@
             this.panel1.Controls.Add(this.btnMostrarHistoria);
             this.panel1.Location = new System.Drawing.Point(3, 96);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 100);
+            this.panel1.Size = new System.Drawing.Size(294, 100);
             this.panel1.TabIndex = 11;
             // 
             // panel2
@@ -165,17 +169,57 @@
             this.panel2.Controls.Add(this.mtxtSala);
             this.panel2.Controls.Add(this.lblSala);
             this.panel2.Controls.Add(this.btnMostrarSala);
-            this.panel2.Location = new System.Drawing.Point(3, 228);
+            this.panel2.Location = new System.Drawing.Point(3, 221);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(266, 100);
+            this.panel2.Size = new System.Drawing.Size(231, 100);
             this.panel2.TabIndex = 12;
+            // 
+            // btnMostrarPaciente
+            // 
+            this.btnMostrarPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarPaciente.Location = new System.Drawing.Point(144, 58);
+            this.btnMostrarPaciente.Name = "btnMostrarPaciente";
+            this.btnMostrarPaciente.Size = new System.Drawing.Size(75, 23);
+            this.btnMostrarPaciente.TabIndex = 17;
+            this.btnMostrarPaciente.Text = "Mostrar";
+            this.btnMostrarPaciente.UseVisualStyleBackColor = true;
+            // 
+            // lblNomPaciente
+            // 
+            this.lblNomPaciente.AutoSize = true;
+            this.lblNomPaciente.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomPaciente.ForeColor = System.Drawing.Color.Indigo;
+            this.lblNomPaciente.Location = new System.Drawing.Point(3, 22);
+            this.lblNomPaciente.Name = "lblNomPaciente";
+            this.lblNomPaciente.Size = new System.Drawing.Size(144, 17);
+            this.lblNomPaciente.TabIndex = 13;
+            this.lblNomPaciente.Text = "Nombre del Paciente: ";
+            // 
+            // mtxtNomPaciente
+            // 
+            this.mtxtNomPaciente.Location = new System.Drawing.Point(144, 22);
+            this.mtxtNomPaciente.Mask = "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
+            this.mtxtNomPaciente.Name = "mtxtNomPaciente";
+            this.mtxtNomPaciente.Size = new System.Drawing.Size(129, 20);
+            this.mtxtNomPaciente.TabIndex = 16;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lblNomPaciente);
+            this.panel3.Controls.Add(this.btnMostrarPaciente);
+            this.panel3.Controls.Add(this.mtxtNomPaciente);
+            this.panel3.Location = new System.Drawing.Point(3, 357);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(281, 100);
+            this.panel3.TabIndex = 18;
             // 
             // MostrarPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PacienteProyecto.Properties.Resources.Imagen_Form_2;
-            this.ClientSize = new System.Drawing.Size(938, 468);
+            this.ClientSize = new System.Drawing.Size(1050, 471);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCerrar);
@@ -190,6 +234,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +255,9 @@
         private System.Windows.Forms.Button btnMostrarSala;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnMostrarPaciente;
+        private System.Windows.Forms.Label lblNomPaciente;
+        private System.Windows.Forms.MaskedTextBox mtxtNomPaciente;
+        private System.Windows.Forms.Panel panel3;
     }
 }
