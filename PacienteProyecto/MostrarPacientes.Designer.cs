@@ -119,6 +119,7 @@
             this.btnMostrarHistoria.TabIndex = 9;
             this.btnMostrarHistoria.Text = "Mostrar";
             this.btnMostrarHistoria.UseVisualStyleBackColor = true;
+            this.btnMostrarHistoria.Click += new System.EventHandler(this.btnMostrarHistoria_Click_1);
             // 
             // panel1
             // 

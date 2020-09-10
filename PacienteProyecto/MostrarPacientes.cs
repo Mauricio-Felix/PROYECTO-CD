@@ -64,11 +64,6 @@ namespace PacienteProyecto
             mtxtNomPaciente.Visible = false;
             btnMostrarPaciente.Visible = false;
         }
-        private void btnMostrarHistoria_Click(object sender, EventArgs e)
-        {
-            dgvMostrarDatos.DataSource = pacientes.BuscarHistoria(Convert.ToInt32(mtxtClinica.Text));
-            mtxtClinica.Text = "";
-        }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -80,6 +75,12 @@ namespace PacienteProyecto
         {
             dgvMostrarDatos.DataSource = pacientes.PacienteIniciaCadena(mtxtNomPaciente.Text);
             mtxtNomPaciente.Text = "";
+        }
+
+        private void btnMostrarHistoria_Click_1(object sender, EventArgs e)
+        {
+            dgvMostrarDatos.DataSource = pacientes.BuscarHistoria(Convert.ToInt32(mtxtClinica.Text));
+            mtxtClinica.Text = "";
         }
     }
 }
