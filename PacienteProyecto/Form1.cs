@@ -68,5 +68,7 @@ namespace PacienteProyecto
             cmbGenero.SelectedValue = false;
             dtpFechaNacimiento.Value = DateTime.Now;
         }
+
+        
     }
 }
