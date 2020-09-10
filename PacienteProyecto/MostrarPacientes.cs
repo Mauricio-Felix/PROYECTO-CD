@@ -22,6 +22,8 @@ namespace PacienteProyecto
         private void MostrarPacientes_Load(object sender, EventArgs e)
         {
             OcultarControles1();
+            OcultarControles2();
+
         }
 
         private void cmbBusqueda_SelectedIndexChanged(object sender, EventArgs e)
@@ -42,6 +44,13 @@ namespace PacienteProyecto
             {
                 dgvMostrarDatos.DataSource = pacientes.TerceraEdad();
             }
+            OcultarControles2();
+            if(cmbBusqueda.SelectedItem.Equals("Nombre del Paciente"))
+            {
+                lblNomPaciente.Visible = true;
+                mtxtNomPaciente.Visible = true;
+                btnMostrarPaciente.Visible = true;
+            }
         }
         public void OcultarControles1()
         {
@@ -49,11 +58,28 @@ namespace PacienteProyecto
             mtxtClinica.Visible = false;
             btnMostrarHistoria.Visible = false;
         }
-
+        public void OcultarControles2()
+        {
+            lblNomPaciente.Visible = false;
+            mtxtNomPaciente.Visible = false;
+            btnMostrarPaciente.Visible = false;
+        }
         private void btnMostrarHistoria_Click(object sender, EventArgs e)
         {
             dgvMostrarDatos.DataSource = pacientes.BuscarHistoria(Convert.ToInt32(mtxtClinica.Text));
             mtxtClinica.Text = "";
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void btnMostrarPaciente_Click(object sender, EventArgs e)
+        {
+            dgvMostrarDatos.DataSource = pacientes.PacienteIniciaCadena(mtxtNomPaciente.Text);
+            mtxtNomPaciente.Text = "";
         }
     }
 }

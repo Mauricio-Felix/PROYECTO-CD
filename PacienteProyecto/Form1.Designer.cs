@@ -42,7 +42,7 @@
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.mtxtEdad = new System.Windows.Forms.MaskedTextBox();
             this.cmbGenero = new System.Windows.Forms.ComboBox();
-            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
             this.mtxtNumHistoria = new System.Windows.Forms.MaskedTextBox();
             this.mtxtSala = new System.Windows.Forms.MaskedTextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -57,11 +57,11 @@
             this.lblRegistro.AutoSize = true;
             this.lblRegistro.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegistro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblRegistro.Location = new System.Drawing.Point(319, 78);
+            this.lblRegistro.Location = new System.Drawing.Point(258, 76);
             this.lblRegistro.Name = "lblRegistro";
-            this.lblRegistro.Size = new System.Drawing.Size(206, 16);
+            this.lblRegistro.Size = new System.Drawing.Size(305, 16);
             this.lblRegistro.TabIndex = 0;
-            this.lblRegistro.Text = "Registro de Pacientes ";
+            this.lblRegistro.Text = "Sistema de Registro de Pacientes ";
             // 
             // lblNombres
             // 
@@ -134,11 +134,11 @@
             this.lblFechaNacimiento.AutoSize = true;
             this.lblFechaNacimiento.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaNacimiento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(197, 267);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(215, 267);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(154, 19);
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(129, 19);
             this.lblFechaNacimiento.TabIndex = 6;
-            this.lblFechaNacimiento.Text = "Fecha de Nacimiento:";
+            this.lblFechaNacimiento.Text = "Fecha de Ingreso:";
             // 
             // lblGenero
             // 
@@ -195,12 +195,12 @@
             this.cmbGenero.Size = new System.Drawing.Size(121, 21);
             this.cmbGenero.TabIndex = 13;
             // 
-            // dtpFechaNacimiento
+            // dtpFechaIngreso
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(372, 265);
-            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaNacimiento.TabIndex = 14;
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(372, 265);
+            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaIngreso.TabIndex = 14;
             // 
             // mtxtNumHistoria
             // 
@@ -233,6 +233,7 @@
             // 
             // btnMostrar
             // 
+            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrar.Location = new System.Drawing.Point(497, 395);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(75, 23);
@@ -244,11 +245,11 @@
             // lblUnach
             // 
             this.lblUnach.AutoSize = true;
-            this.lblUnach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnach.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnach.ForeColor = System.Drawing.Color.Purple;
             this.lblUnach.Location = new System.Drawing.Point(215, 41);
             this.lblUnach.Name = "lblUnach";
-            this.lblUnach.Size = new System.Drawing.Size(268, 20);
+            this.lblUnach.Size = new System.Drawing.Size(392, 22);
             this.lblUnach.TabIndex = 19;
             this.lblUnach.Text = "Universidad Nacional de Chimborazo";
             // 
@@ -274,7 +275,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.mtxtSala);
             this.Controls.Add(this.mtxtNumHistoria);
-            this.Controls.Add(this.dtpFechaNacimiento);
+            this.Controls.Add(this.dtpFechaIngreso);
             this.Controls.Add(this.cmbGenero);
             this.Controls.Add(this.mtxtEdad);
             this.Controls.Add(this.txtCedula);
@@ -314,7 +315,7 @@
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.MaskedTextBox mtxtEdad;
         private System.Windows.Forms.ComboBox cmbGenero;
-        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
+        private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
         private System.Windows.Forms.MaskedTextBox mtxtNumHistoria;
         private System.Windows.Forms.MaskedTextBox mtxtSala;
         private System.Windows.Forms.Button btnGuardar;

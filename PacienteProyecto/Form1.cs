@@ -29,7 +29,7 @@ namespace PacienteProyecto
                     persona.Apellido = mtxtApellidos.Text;
                     persona.CI = txtCedula.Text;
                     persona.Edad = Convert.ToInt32(mtxtEdad.Text);
-                    persona.FechaNacimiento = dtpFechaNacimiento.Value.ToString();
+                    persona.FechaIngreso = dtpFechaIngreso.Value.ToString();
                     persona.NumHistoriaClinica = Convert.ToInt32(mtxtNumHistoria.Text);
                     persona.NumSala = Convert.ToInt32(mtxtSala.Text);
                     persona.Genero = cmbGenero.Text;
@@ -66,13 +66,14 @@ namespace PacienteProyecto
             mtxtSala.Text = "";
             txtCedula.Text = "";
             cmbGenero.SelectedValue = false;
-            dtpFechaNacimiento.Value = DateTime.Now;
+            dtpFechaIngreso.Value = DateTime.Now;
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             MostrarPacientes mostrarPacientes = new MostrarPacientes();
             mostrarPacientes.Show();
+            Hide();
             mostrarPacientes.pacientes = personas;
         }
 
