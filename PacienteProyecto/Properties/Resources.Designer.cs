@@ -73,6 +73,16 @@ namespace PacienteProyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagen_Form_2 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen Form 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Imagen_Unach {
             get {
                 object obj = ResourceManager.GetObject("Imagen Unach", resourceCulture);
