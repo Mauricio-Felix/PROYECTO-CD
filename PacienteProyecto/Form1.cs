@@ -68,12 +68,5 @@ namespace PacienteProyecto
             cmbGenero.SelectedValue = false;
             dtpFechaNacimiento.Value = DateTime.Now;
         }
-
-        private void btnMostrar_Click(object sender, EventArgs e)
-        {
-            MostrarPacientes mostrarPacientes = new MostrarPacientes();
-            mostrarPacientes.Show();
-            mostrarPacientes.pacientes = personas;
-        }
     }
 }
